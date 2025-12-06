@@ -59,7 +59,6 @@
 
   <!-- Utility Styles -->
   <style>
-    /* Visually hidden text */
     .visually-hidden {
       position: absolute !important;
       height: 1px;
@@ -92,6 +91,33 @@
       z-index: 9999;
       box-shadow: 0 4px 12px rgba(0,0,0,.1);
     }
+
+    .contact-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      align-items: start;
+    }
+
+    .contact-card form label {
+      display: block;
+      margin-bottom: .75rem;
+      font-weight: 600;
+      color: inherit;
+    }
+    .contact-card form input,
+    .contact-card form textarea {
+      width: 100%;
+      padding: .6rem .75rem;
+      border-radius: 8px;
+      border: 1px solid rgba(0,0,0,0.08);
+      font-size: 1rem;
+      margin-top: .25rem;
+    }
+
+    @media (max-width: 768px) {
+      .contact-cards { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 
@@ -106,11 +132,11 @@
     </div>
 
     <ul class="nav-links" role="menubar">
-      <li role="none"><a role="menuitem" href="#about">About</a></li>
-      <li role="none"><a role="menuitem" href="#services">Services</a></li>
-      <li role="none"><a role="menuitem" href="#experience">Experience</a></li>
-      <li role="none"><a role="menuitem" href="#skills">Skills</a></li>
-      <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+      <li role="none"><a href="#about">About</a></li>
+      <li role="none"><a href="#services">Services</a></li>
+      <li role="none"><a href="#experience">Experience</a></li>
+      <li role="none"><a href="#skills">Skills</a></li>
+      <li role="none"><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
@@ -127,13 +153,13 @@
         and seamless commercial cargo management across Kenya.
       </p>
 
-      <div class="hero-buttons" role="group" aria-label="Primary calls to action">
+      <div class="hero-buttons">
         <a class="btn-primary" href="#contact">Get a Quote</a>
         <a class="btn-secondary" href="#services">View Services</a>
       </div>
     </div>
 
-    <div class="hero-photo" role="img" aria-label="Profile photo of Justus Katila Ndaisi">
+    <div class="hero-photo">
       <img src="katila.jpg" alt="Profile Photo of Justus Katila Ndaisi" loading="lazy">
     </div>
   </header>
@@ -142,8 +168,8 @@
   <main id="main-content" role="main" tabindex="-1">
 
     <!-- ABOUT -->
-    <section id="about" class="section" aria-labelledby="about-heading">
-      <h2 id="about-heading" class="section-title">About Me</h2>
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
 
       <div class="two-column">
         <div class="column">
@@ -178,15 +204,14 @@
     </section>
 
     <!-- SERVICES -->
-    <section id="services" class="section" aria-labelledby="services-heading">
-      <h2 id="services-heading" class="section-title">Comprehensive Logistics Solutions</h2>
+    <section id="services" class="section">
+      <h2 class="section-title">Comprehensive Logistics Solutions</h2>
 
-      <div class="services-grid" role="list">
+      <div class="services-grid">
 
-        <!-- Service 1 -->
-        <article class="service-card" role="listitem" aria-labelledby="svc1">
+        <article class="service-card">
           <div class="service-icon">🚗</div>
-          <h3 id="svc1">Japanese Car Importation</h3>
+          <h3>Japanese Car Importation</h3>
           <p>Full vehicle sourcing, inspection, export documentation, shipping, and clearance.</p>
           <ul>
             <li>Sourcing & Pre-Purchase Inspection</li>
@@ -196,10 +221,9 @@
           </ul>
         </article>
 
-        <!-- Service 2 -->
-        <article class="service-card" role="listitem" aria-labelledby="svc2">
+        <article class="service-card">
           <div class="service-icon">📄</div>
-          <h3 id="svc2">Customs Clearance & Forwarding</h3>
+          <h3>Customs Clearance & Forwarding</h3>
           <p>Expert ICMS navigation for compliant and timely cargo clearance.</p>
           <ul>
             <li>ICMS Declaration</li>
@@ -209,10 +233,9 @@
           </ul>
         </article>
 
-        <!-- Service 3 -->
-        <article class="service-card" role="listitem" aria-labelledby="svc3">
+        <article class="service-card">
           <div class="service-icon">📦</div>
-          <h3 id="svc3">Commercial Cargo Handling</h3>
+          <h3>Commercial Cargo Handling</h3>
           <p>Handling for agricultural, electrical, and general commercial cargo.</p>
           <ul>
             <li>Container Release</li>
@@ -226,8 +249,8 @@
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience" class="section" aria-labelledby="exp-heading">
-      <h2 id="exp-heading" class="section-title">Professional Experience</h2>
+    <section id="experience" class="section">
+      <h2 class="section-title">Professional Experience</h2>
 
       <div class="two-column">
 
@@ -251,9 +274,8 @@
           </div>
         </div>
 
-        <!-- Education -->
-        <aside class="column" aria-labelledby="edu-heading">
-          <h2 id="edu-heading" class="section-title small">Education & Training</h2>
+        <aside class="column">
+          <h2 class="section-title small">Education & Training</h2>
 
           <div class="edu-card">
             🎓 <strong>BSc. Applied Statistics</strong><br>
@@ -269,12 +291,12 @@
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="section dark-section" aria-labelledby="skills-heading">
-      <h2 id="skills-heading" class="section-title light">Technical Expertise & Skills</h2>
+    <section id="skills" class="section dark-section">
+      <h2 class="section-title light">Technical Expertise & Skills</h2>
 
-      <div class="skills-grid" role="list">
+      <div class="skills-grid">
 
-        <div class="skill-card" role="listitem">
+        <div class="skill-card">
           <h3>Core Logistics</h3>
           <ul>
             <li>ICMS Declaration</li>
@@ -284,7 +306,7 @@
           </ul>
         </div>
 
-        <div class="skill-card" role="listitem">
+        <div class="skill-card">
           <h3>Data & Technical</h3>
           <ul>
             <li>SPSS, Python, R</li>
@@ -294,7 +316,7 @@
           </ul>
         </div>
 
-        <div class="skill-card" role="listitem">
+        <div class="skill-card">
           <h3>Professional</h3>
           <ul>
             <li>Negotiation</li>
@@ -307,55 +329,78 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- CONTACT (Modified only as requested) -->
     <section id="contact" class="section" aria-labelledby="contact-heading">
       <h2 id="contact-heading" class="section-title">Get In Touch</h2>
 
-      <div class="contact-grid" role="list">
+      <div class="contact-cards">
 
-        <div class="contact-card" role="listitem">
-          📞 <strong>Call / WhatsApp</strong><br>
-          <a href="tel:+254727368234">+254 727 368 234</a>
+        <!-- Card 1: Direct contact links -->
+        <div class="contact-card" role="group" aria-labelledby="contact-direct">
+          <h3 id="contact-direct">Contact & Messaging</h3>
+          <p class="meta">Click a method below to open the messaging channel (placeholders can be replaced).</p>
+
+          <ul style="list-style:none; padding:0; margin-top:1rem;">
+            <li style="margin-bottom:.75rem;">
+              📞 <strong>Call</strong><br>
+              <a href="tel:+254727368234">+254 727 368 234</a>
+            </li>
+
+            <li style="margin-bottom:.75rem;">
+              💬 <strong>WhatsApp</strong><br>
+              <a href="https://wa.me/254727368234?text=Hello%20Justus%20Katila" target="_blank" rel="noopener noreferrer">
+                Message on WhatsApp
+              </a>
+            </li>
+
+            <li style="margin-bottom:.75rem;">
+              🐦 <strong>Twitter</strong><br>
+              <a href="https://twitter.com/intent/tweet?text=Hello%20Justus%20Katila" target="_blank" rel="noopener noreferrer">
+                Tweet / Message
+              </a>
+            </li>
+
+            <li style="margin-bottom:.75rem;">
+              💬 <strong>Facebook</strong><br>
+              <a href="https://m.me/REPLACE_WITH_PAGE_USERNAME" target="_blank" rel="noopener noreferrer">
+                Send a Facebook Message
+              </a>
+            </li>
+
+            <li style="margin-bottom:.75rem;">
+              🔗 <strong>LinkedIn</strong><br>
+              <a href="https://www.linkedin.com/in/justus-katila-ndaisi" target="_blank" rel="noopener noreferrer">
+                Message on LinkedIn
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <div class="contact-card" role="listitem">
-          📧 <strong>Email</strong><br>
-          <a href="mailto:contact@juskatlogistics.co.ke">
-            contact@juskatlogistics.co.ke
-          </a>
-        </div>
+        <!-- Card 2: UPDATED FORM (Send a Message) -->
+        <div class="contact-card" role="form" aria-labelledby="contact-form-heading">
+          <h3 id="contact-form-heading">Send a Message</h3>
 
-        <div class="contact-card" role="listitem">
-          🌐 <strong>Company Website</strong><br>
-          <a href="http://www.intimefreightcargoservices.co.ke" target="_blank" rel="noopener noreferrer">
-            www.intimefreightcargoservices.co.ke
-          </a>
+          <form id="contact-form" novalidate>
+
+            <label for="full-name">Full Name
+              <input type="text" id="full-name" name="name" required autocomplete="name" />
+            </label>
+
+            <label for="email-address">Email Address
+              <input type="email" id="email-address" name="email" required autocomplete="email" />
+            </label>
+
+            <label for="message">Message
+              <textarea id="message" name="message" required rows="6"></textarea>
+            </label>
+
+            <div id="form-feedback" class="visually-hidden" aria-live="polite"></div>
+
+            <button type="submit" class="btn-primary" style="margin-top:.75rem;">Send Message</button>
+          </form>
         </div>
 
       </div>
-
-      <!-- Contact Form -->
-      <form id="contact-form" class="contact-form" novalidate>
-        <label>
-          Full Name
-          <input type="text" id="name" name="name" required aria-required="true" autocomplete="name">
-        </label>
-
-        <label>
-          Email Address
-          <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
-        </label>
-
-        <label>
-          Message
-          <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
-        </label>
-
-        <div id="form-feedback" class="visually-hidden" aria-live="polite"></div>
-
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
-
     </section>
   </main>
 
@@ -379,20 +424,20 @@
       form.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        const name = form.name.value.trim();
-        const email = form.email.value.trim();
-        const message = form.message.value.trim();
+        const name = form.querySelector('[name="name"]').value.trim();
+        const email = form.querySelector('[name="email"]').value.trim();
+        const message = form.querySelector('[name="message"]').value.trim();
 
         if (!name || !email || !message) {
           feedback.classList.remove('visually-hidden');
-          feedback.textContent = 'Please complete all required fields.';
+          feedback.textContent = 'Please complete all required fields (name, email, message).';
           return;
         }
 
         feedback.classList.remove('visually-hidden');
-        feedback.textContent = 'Thanks! Your message was received. We will respond shortly.';
+        feedback.textContent = 'Thanks! Your message was received. We will contact you shortly.';
         form.reset();
-        form.querySelector('input, textarea').focus();
+        form.querySelector('input').focus();
       });
     }
 
@@ -419,3 +464,4 @@
 
 </body>
 </html>
+
