@@ -1,10 +1,138 @@
 {
+  "schemaVersion": "1.0",
   "name": "Justus Katila Ndaisi",
+  "role": "Customs Declaration & Logistics Specialist",
+  "summary": "Customs & logistics professional specialising in Japanese vehicle importation, ICMS customs clearance, and end-to-end commercial cargo handling across Kenya.",
   "photo": "assets/placeholder-profile.jpg",
-  "about": "I am a dedicated Customs Declaration & Logistics Specialist based in Kenya, with proven experience streamlining the complexities of international trade. I combine hands-on operational experience at ports with an academic foundation in Applied Statistics and Computing to optimise import workflows, ensure compliance, and manage risk. I specialise in Japanese vehicle sourcing and importation, end-to-end customs clearance using ICMS, and handling general cargo including agricultural products, electricals and textiles.",
   "contact": {
     "email": "contact@juskatlogistics.co.ke",
     "phone": "+254727368234",
+    "website": "http://www.intimefreightcargoservices.co.ke",
     "location": "Mombasa & Nairobi, Kenya"
-  }
+  },
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/justus-katila-ndaisi",
+    "twitter": null
+  },
+  "services": [
+    {
+      "id": "car-imports",
+      "title": "Japanese Car Importation",
+      "summary": "Sourcing, inspection, export documentation, shipping and vehicle registration support.",
+      "items": [
+        "Pre-purchase inspection",
+        "Export documentation & shipping",
+        "Duty calculation & KRA payment",
+        "Port clearance & registration"
+      ]
+    },
+    {
+      "id": "customs-clearance",
+      "title": "Customs Clearance & Forwarding",
+      "summary": "ICMS declarations, HS classification and compliant cargo clearance.",
+      "items": [
+        "ICMS declaration",
+        "HS code classification",
+        "Import/export documentation",
+        "KEBS verification"
+      ]
+    },
+    {
+      "id": "cargo-handling",
+      "title": "Commercial Cargo Handling",
+      "summary": "Container release, cargo verification, warehousing and last-mile coordination.",
+      "items": [
+        "Container release",
+        "Cargo verification",
+        "Warehouse coordination",
+        "End-to-end logistics"
+      ]
+    },
+    {
+      "id": "consulting",
+      "title": "Consulting & Compliance",
+      "summary": "Regulatory guidance, tariff optimisation and risk-managed logistics planning.",
+      "items": [
+        "Regulatory compliance reviews",
+        "Tariff & duty optimisation",
+        "Supplier & exporter liaison",
+        "Operational risk management"
+      ]
+    }
+  ],
+  "skills": {
+    "core": [
+      "ICMS Declaration",
+      "Customs Procedures",
+      "Tariff Classification",
+      "Port Operations"
+    ],
+    "technical": [
+      "SPSS",
+      "Python",
+      "R",
+      "Logistics Optimization"
+    ],
+    "professional": [
+      "Negotiation",
+      "Risk Management",
+      "Supplier Relations",
+      "Problem Solving"
+    ]
+  },
+  "experience": [
+    {
+      "company": "Intime Freight Cargo Services",
+      "role": "Director / Lead Logistics Specialist",
+      "start": "2025-01",
+      "end": "Present",
+      "location": "Kenya",
+      "summary": "Lead operations for vehicle sourcing, shipping and customs clearance; manage client relationships and compliance."
+    },
+    {
+      "company": "Multiple Hauliers Ltd",
+      "role": "Port Clerk",
+      "start": "2024-01",
+      "end": "2024-12",
+      "location": "Mombasa, Kenya",
+      "summary": "Processed import documentation and supported port operations."
+    },
+    {
+      "company": "Benairs Logistics Ltd",
+      "role": "Field Officer",
+      "start": "2023-01",
+      "end": "2023-12",
+      "location": "Kenya",
+      "summary": "Managed ICMS declarations and cargo removal processes."
+    }
+  ],
+  "education": [
+    {
+      "degree": "BSc. Applied Statistics",
+      "institution": "Moi University"
+    },
+    {
+      "degree": "Diploma in Clearing & Forwarding (Distinction)",
+      "institution": "Kenya Institute / Accredited Body"
+    },
+    {
+      "course": "ICMS Training",
+      "institution": "Kenya School of Revenue Administration"
+    },
+    {
+      "course": "IATA Diploma in Dangerous Goods",
+      "institution": "IATA",
+      "status": "ongoing"
+    }
+  ],
+  "credentials": [
+    "ICMS Certified",
+    "KRA Registered Agent"
+  ],
+  "languages": [
+    "English",
+    "Kiswahili"
+  ],
+  "availability": "Available for consulting and contract engagements",
+  "lastUpdated": "2025-12-06"
 }

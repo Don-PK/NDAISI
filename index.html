@@ -2,29 +2,120 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Juskat Logistics – Professional Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Juskat Logistics – Professional Logistics & Importation Profile</title>
+
+  <meta name="description"
+        content="Professional profile of Justus Katila Ndaisi — Customs Declaration & Logistics Specialist. Expert in Japanese car imports, customs clearance, and commercial cargo handling.">
+
+  <link rel="canonical" href="http://www.intimefreightcargoservices.co.ke/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Juskat Logistics – Professional Profile">
+  <meta property="og:description" content="Expert in Japanese vehicle importation, customs clearance, and cargo logistics in Kenya.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://www.intimefreightcargoservices.co.ke/">
+  <meta property="og:image" content="katila.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#0f144b">
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Justus Katila Ndaisi",
+    "jobTitle":"Customs Declaration & Logistics Specialist",
+    "worksFor":{
+      "@type":"Organization",
+      "name":"Intime Freight Cargo Services",
+      "url":"http://www.intimefreightcargoservices.co.ke"
+    },
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Mombasa & Nairobi",
+      "addressCountry":"Kenya"
+    },
+    "email":"contact@juskatlogistics.co.ke",
+    "telephone":"+254727368234"
+  }
+  </script>
+
+  <!-- Utility Styles -->
+  <style>
+    /* Visually hidden text */
+    .visually-hidden {
+      position: absolute !important;
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+      white-space: nowrap;
+      border: 0;
+      padding: 0;
+      margin: -1px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    .skip-link:focus {
+      left: 1rem;
+      top: 1rem;
+      width: auto;
+      height: auto;
+      padding: .5rem 1rem;
+      background: #fff;
+      border-radius: 8px;
+      z-index: 9999;
+      box-shadow: 0 4px 12px rgba(0,0,0,.1);
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" aria-label="Main Navigation">
     <div class="nav-logo">
-      <span class="anchor-icon">⚓</span> Juskat Logistics
+      <span class="nav-logo-placeholder">Insert Logo</span>
     </div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
+
+    <ul class="nav-links" role="menubar">
+      <li role="none"><a role="menuitem" href="#about">About</a></li>
+      <li role="none"><a role="menuitem" href="#services">Services</a></li>
+      <li role="none"><a role="menuitem" href="#experience">Experience</a></li>
+      <li role="none"><a role="menuitem" href="#skills">Skills</a></li>
+      <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <!-- HERO SECTION -->
-  <header class="hero">
+  <header class="hero" role="banner">
     <div class="hero-content fade-in">
       <span class="badge">Expert Import Solutions</span>
 
@@ -36,35 +127,34 @@
         and seamless commercial cargo management across Kenya.
       </p>
 
-      <div class="hero-buttons">
+      <div class="hero-buttons" role="group" aria-label="Primary calls to action">
         <a class="btn-primary" href="#contact">Get a Quote</a>
         <a class="btn-secondary" href="#services">View Services</a>
       </div>
     </div>
 
-    <div class="hero-photo">
-      <img src="katila.jpg" alt="Profile Photo">
+    <div class="hero-photo" role="img" aria-label="Profile photo of Justus Katila Ndaisi">
+      <img src="katila.jpg" alt="Profile Photo of Justus Katila Ndaisi" loading="lazy">
     </div>
   </header>
 
-  <main>
+  <!-- MAIN -->
+  <main id="main-content" role="main" tabindex="-1">
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="section">
-      <h2 class="section-title">About Me</h2>
+    <!-- ABOUT -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <h2 id="about-heading" class="section-title">About Me</h2>
 
       <div class="two-column">
         <div class="column">
           <p>
             I am a dedicated <strong>Customs Declaration & Logistics Specialist</strong>
-            with a proven track record in streamlining international trade and
-            providing seamless importation services.
+            with a proven track record in streamlining international trade and providing seamless importation services.
           </p>
 
           <p>
-            With hands-on operational experience at the Port of Mombasa and a foundation in
-            <strong>Applied Statistics</strong>, I offer a unique combination of
-            regulatory knowledge and analytical precision.
+            With operational experience at the Port of Mombasa and a foundation in
+            <strong>Applied Statistics</strong>, I combine regulatory knowledge with analytical precision.
           </p>
 
           <ul class="icon-list">
@@ -87,15 +177,16 @@
       </div>
     </section>
 
-    <!-- SERVICES SECTION -->
-    <section id="services" class="section">
-      <h2 class="section-title">Comprehensive Logistics Solutions</h2>
+    <!-- SERVICES -->
+    <section id="services" class="section" aria-labelledby="services-heading">
+      <h2 id="services-heading" class="section-title">Comprehensive Logistics Solutions</h2>
 
-      <div class="services-grid">
+      <div class="services-grid" role="list">
 
-        <div class="service-card">
+        <!-- Service 1 -->
+        <article class="service-card" role="listitem" aria-labelledby="svc1">
           <div class="service-icon">🚗</div>
-          <h3>Japanese Car Importation</h3>
+          <h3 id="svc1">Japanese Car Importation</h3>
           <p>Full vehicle sourcing, inspection, export documentation, shipping, and clearance.</p>
           <ul>
             <li>Sourcing & Pre-Purchase Inspection</li>
@@ -103,11 +194,12 @@
             <li>Duty Calculation & KRA Payment</li>
             <li>Port Clearance & Registration</li>
           </ul>
-        </div>
+        </article>
 
-        <div class="service-card">
+        <!-- Service 2 -->
+        <article class="service-card" role="listitem" aria-labelledby="svc2">
           <div class="service-icon">📄</div>
-          <h3>Customs Clearance & Forwarding</h3>
+          <h3 id="svc2">Customs Clearance & Forwarding</h3>
           <p>Expert ICMS navigation for compliant and timely cargo clearance.</p>
           <ul>
             <li>ICMS Declaration</li>
@@ -115,26 +207,27 @@
             <li>Import/Export Documentation</li>
             <li>KEBS Verification</li>
           </ul>
-        </div>
+        </article>
 
-        <div class="service-card">
+        <!-- Service 3 -->
+        <article class="service-card" role="listitem" aria-labelledby="svc3">
           <div class="service-icon">📦</div>
-          <h3>Commercial Cargo Handling</h3>
-          <p>Seamless handling for agricultural, electrical, and general commercial cargo.</p>
+          <h3 id="svc3">Commercial Cargo Handling</h3>
+          <p>Handling for agricultural, electrical, and general commercial cargo.</p>
           <ul>
             <li>Container Release</li>
             <li>Cargo Verification</li>
             <li>Warehouse Coordination</li>
             <li>End-to-End Logistics</li>
           </ul>
-        </div>
+        </article>
 
       </div>
     </section>
 
-    <!-- EXPERIENCE + EDUCATION -->
-    <section id="experience" class="section">
-      <h2 class="section-title">Professional Experience</h2>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section" aria-labelledby="exp-heading">
+      <h2 id="exp-heading" class="section-title">Professional Experience</h2>
 
       <div class="two-column">
 
@@ -158,37 +251,30 @@
           </div>
         </div>
 
-        <div class="column">
-          <h2 class="section-title small">Education & Training</h2>
+        <!-- Education -->
+        <aside class="column" aria-labelledby="edu-heading">
+          <h2 id="edu-heading" class="section-title small">Education & Training</h2>
 
           <div class="edu-card">
             🎓 <strong>BSc. Applied Statistics</strong><br>
             Moi University
           </div>
 
-          <div class="edu-card">
-            📘 Diploma in Clearing & Forwarding (Distinction)
-          </div>
+          <div class="edu-card">📘 Diploma in Clearing & Forwarding (Distinction)</div>
+          <div class="edu-card">🏅 ICMS Training – Kenya School of Revenue Administration</div>
+          <div class="edu-card">✈ IATA Diploma in Dangerous Goods (Ongoing)</div>
 
-          <div class="edu-card">
-            🏅 ICMS Training – Kenya School of Revenue Administration
-          </div>
-
-          <div class="edu-card">
-            ✈ IATA Diploma in Dangerous Goods (Ongoing)
-          </div>
-        </div>
-
+        </aside>
       </div>
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="section dark-section">
-      <h2 class="section-title light">Technical Expertise & Skills</h2>
+    <section id="skills" class="section dark-section" aria-labelledby="skills-heading">
+      <h2 id="skills-heading" class="section-title light">Technical Expertise & Skills</h2>
 
-      <div class="skills-grid">
+      <div class="skills-grid" role="list">
 
-        <div class="skill-card">
+        <div class="skill-card" role="listitem">
           <h3>Core Logistics</h3>
           <ul>
             <li>ICMS Declaration</li>
@@ -198,7 +284,7 @@
           </ul>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" role="listitem">
           <h3>Data & Technical</h3>
           <ul>
             <li>SPSS, Python, R</li>
@@ -208,7 +294,7 @@
           </ul>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" role="listitem">
           <h3>Professional</h3>
           <ul>
             <li>Negotiation</li>
@@ -222,31 +308,114 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section">
-      <h2 class="section-title">Get In Touch</h2>
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" class="section-title">Get In Touch</h2>
 
-      <div class="contact-grid">
+      <div class="contact-grid" role="list">
 
-        <div class="contact-card">
+        <div class="contact-card" role="listitem">
           📞 <strong>Call / WhatsApp</strong><br>
-          +254 727368234
+          <a href="tel:+254727368234">+254 727 368 234</a>
         </div>
 
-        <div class="contact-card">
+        <div class="contact-card" role="listitem">
           📧 <strong>Email</strong><br>
-          contact@juskatlogistics.co.ke
+          <a href="mailto:contact@juskatlogistics.co.ke">
+            contact@juskatlogistics.co.ke
+          </a>
         </div>
 
-        <div class="contact-card">
-          📍 <strong>Location</strong><br>
-          Mombasa & Nairobi, Kenya
+        <div class="contact-card" role="listitem">
+          🌐 <strong>Company Website</strong><br>
+          <a href="http://www.intimefreightcargoservices.co.ke" target="_blank" rel="noopener noreferrer">
+            www.intimefreightcargoservices.co.ke
+          </a>
         </div>
 
       </div>
 
-    </section>
+      <!-- Contact Form -->
+      <form id="contact-form" class="contact-form" novalidate>
+        <label>
+          Full Name
+          <input type="text" id="name" name="name" required aria-required="true" autocomplete="name">
+        </label>
 
+        <label>
+          Email Address
+          <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
+        </label>
+
+        <label>
+          Message
+          <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+        </label>
+
+        <div id="form-feedback" class="visually-hidden" aria-live="polite"></div>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+
+    </section>
   </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo" style="text-align:center; padding:2rem 1rem; color:var(--muted);">
+    <small>© <span id="year"></span> Juskat Logistics — All rights reserved.</small>
+  </footer>
+
+  <!-- Inline Script -->
+  <script>
+  (function () {
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const form = document.getElementById('contact-form');
+    const feedback = document.getElementById('form-feedback');
+
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
+        const message = form.message.value.trim();
+
+        if (!name || !email || !message) {
+          feedback.classList.remove('visually-hidden');
+          feedback.textContent = 'Please complete all required fields.';
+          return;
+        }
+
+        feedback.classList.remove('visually-hidden');
+        feedback.textContent = 'Thanks! Your message was received. We will respond shortly.';
+        form.reset();
+        form.querySelector('input, textarea').focus();
+      });
+    }
+
+    if (!prefersReduced) {
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', () => {
+          const href = a.getAttribute('href');
+          if (!href || href === '#') return;
+
+          const target = document.querySelector(href);
+          if (target) {
+            setTimeout(() => {
+              if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+              target.focus();
+            }, 500);
+          }
+        });
+      });
+    }
+  })();
+  </script>
+
+  <script src="script.js" defer></script>
 
 </body>
 </html>
